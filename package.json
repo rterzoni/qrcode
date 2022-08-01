@@ -1,14 +1,11 @@
 {
-	"name": "@qrcode",
-	"version": "1.0.0",
-	"description": "QR Code Reader",
-	"keywords": [],
-	"license": "",
-	"author": "Rafael Terzoni Tardelli",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rterzoni/qrcode.git"
-	},
-	"private": true
+    "name": "app-service-hello-world",
+    "description": "Simple Hello World Node.js sample for Azure App Service",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Microsoft",
+    "scripts": {
+        "start": "node index.js"
+    }
 }
