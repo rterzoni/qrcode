@@ -1,0 +1,14 @@
+{
+	"name": "@qrcode",
+	"version": "1.0.0",
+	"description": "QR Code Reader",
+	"keywords": [],
+	"license": "",
+	"author": "Rafael Terzoni Tardelli",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rterzoni/qrcode.git"
+	},
+	"private": true
+}
