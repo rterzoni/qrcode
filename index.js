@@ -1,23 +1,11 @@
 const http = require('http');
+var fs = require('fs');
+var index = fs.readFileSync('index.html');
 
 const server = http.createServer((request, response) => {
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World! testing 123");
+    response.writeHead(200, {"Content-Type": 'text/html'});
+    response.end(index);
 });
 
 const port = process.env.PORT || 1337;
 server.listen(port);
-
-console.log("Server running at http://localhost:%d", port);
-
-function response(req, res) {
-    fs.readFile(__dirname + '/index.html',
-    function (err, data) {
-        if (err) {
-            res.writeHead(500);
-            return res.end('Failed to load file index.html');
-        }
-        res.writeHead(200);
-        res.end(data);
-    });
-}
